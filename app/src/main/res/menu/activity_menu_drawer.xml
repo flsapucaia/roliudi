@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <include layout="@layout/header_main" />
+
+        <item android:title="@string/menu">
+            <menu>
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/ic_home_black"
+                    android:title="@string/menu_home" />
+                <item
+                    android:id="@+id/movies"
+                    android:icon="@drawable/ic_movies"
+                    android:title="@string/menu_movies" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info"
+                android:title="@string/menu_about"/>
+        </menu>
+    </item>
+</menu>
