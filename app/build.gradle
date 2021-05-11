@@ -38,7 +38,8 @@ dependencies {
     def cardViewVersion = "1.0.0"
     def recyclerviewVersion = "1.2.0"
     def retrofitVersion = "2.7.0"
-    def materialVersion = "1.2.0"
+    def materialVersion = '1.3.0'
+    def navigationVersion = '2.3.5'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -58,6 +59,10 @@ dependencies {
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
