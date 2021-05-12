@@ -8,4 +8,5 @@
     <string name="menu_movies">Movies</string>
     <string name="more">Mais</string>
     <string name="menu_about">Sobre</string>
+    <string name="hello_user">Olá %s. Seja bem vindo!</string>
 </resources>
