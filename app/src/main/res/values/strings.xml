@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">roliudi</string>
+    <string name="app_name">Roliudi</string>
+    <string name="desc_app">Seu app de filmes!</string>
+    <string name="enter">Entrar</string>
+
+    <string name="menu">Menu</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_movies">Movies</string>
+    <string name="more">Mais</string>
+    <string name="menu_about">Sobre</string>
+    <string name="hello_user">Olá %s. Seja bem vindo!</string>
 </resources>
