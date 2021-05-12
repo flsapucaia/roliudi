@@ -4,7 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <include layout="@layout/header_main" />
+        <include layout="@layout/nav_header_main" />
 
         <item android:title="@string/menu">
             <menu>
