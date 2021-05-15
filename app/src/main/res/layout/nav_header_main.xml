@@ -11,7 +11,8 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
 <!--        <Button-->
 <!--            android:id="@+id/back_button"-->
@@ -19,6 +20,11 @@
 <!--            android:layout_height="wrap_content"-->
 <!--            android:layout_gravity="center"-->
 <!--            android:src="@drawable/ic_back" />-->
+
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:src="@drawable/logo_roliudi" />
 
         <TextView
             android:layout_width="match_parent"
@@ -44,11 +50,11 @@
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_height="34dp"
         android:layout_gravity="end"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:text="@string/enter"
         android:textColor="@color/colorWhite"
         android:textColorLink="@color/design_default_color_secondary"
-        android:textSize="@dimen/small_size_12"/>
+        android:textSize="@dimen/small_size_12" />
 </LinearLayout>
