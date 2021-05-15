@@ -9,4 +9,6 @@
     <string name="more">Mais</string>
     <string name="menu_about">Sobre</string>
     <string name="hello_user">Olá %s. Seja bem vindo!</string>
+    <string name="movie_release_year">Ano de lançamento</string>
+    <string name="movie_title">Título do Filme</string>
 </resources>
