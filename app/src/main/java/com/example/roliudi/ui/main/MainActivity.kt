@@ -9,6 +9,7 @@ import androidx.navigation.ui.*
 import com.example.roliudi.R
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_login.*
 
 class MainActivity : AppCompatActivity() {
 
