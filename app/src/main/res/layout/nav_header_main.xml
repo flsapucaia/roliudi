@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/header_height"
     android:gravity="bottom"
@@ -12,24 +13,27 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_vertical_margin"
         android:orientation="horizontal">
 
-<!--        <Button-->
-<!--            android:id="@+id/back_button"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/ic_back" />-->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center" />
 
         <ImageView
-            android:layout_width="98dp"
-            android:layout_height="98dp"
+            android:id="@+id/logo_roliudi"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
             android:src="@drawable/logo_roliudi" />
 
         <TextView
+            android:id="@+id/app_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/colorWhite"
@@ -40,7 +44,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_gravity="end"
         android:text="@string/hello_user"
         android:textColor="@color/colorWhite"
@@ -50,9 +53,8 @@
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:text="@string/enter"
         android:textColor="@color/colorWhite"
         android:textColorLink="@color/design_default_color_secondary"
