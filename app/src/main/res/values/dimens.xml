@@ -2,6 +2,8 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="custom_horizontal_margin">24dp</dimen>
+    <dimen name="custom_vertical_margin">24dp</dimen>
     <dimen name="header_height">176dp</dimen>
     <dimen name="header_vertical_spacing">8dp</dimen>
 
@@ -10,4 +12,8 @@
     <dimen name="big_size_32">32sp</dimen>
     <dimen name="medium_size_16">16sp</dimen>
     <dimen name="small_size_12">12sp</dimen>
+
+    <!-- Custom Image Spacing-->
+    <dimen name="logo_size">84dp</dimen>
+
 </resources>
