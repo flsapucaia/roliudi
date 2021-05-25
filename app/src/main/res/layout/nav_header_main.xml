@@ -14,12 +14,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-<!--        <Button-->
-<!--            android:id="@+id/back_button"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/ic_back" />-->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center" />
 
         <ImageView
             android:layout_width="98dp"
