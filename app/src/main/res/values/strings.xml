@@ -12,6 +12,12 @@
     <string name="hello_user">Olá %s. Seja bem vindo!</string>
 
     <string name="login_user">Login</string>
-    <string name="login_password">Password</string>
+    <string name="login_password">Senha</string>
+    <string name="login_confirm_password">Confirme sua senha!</string>
     <string name="forgot_password">Esqueci minha senha</string>
+    <string name="register">Ainda não tem conta? Clique!</string>
+    <string name="name">Nome</string>
+    <string name="surname">Sobrenome</string>
+    <string name="register_user">Seja bem vindo! Cadastro.</string>
+    <string name="email_user">Email</string>
 </resources>
