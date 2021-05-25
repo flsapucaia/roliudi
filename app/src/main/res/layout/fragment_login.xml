@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_custom"
+    android:background="@drawable/login"
     android:padding="@dimen/giant_spacing_48">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="@dimen/medium_spacing_16"
         android:src="@drawable/logo_roliudi"
         app:layout_constraintBottom_toTopOf="@+id/login_user"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +25,7 @@
         android:layout_marginBottom="@dimen/giant_spacing_48"
         android:layout_marginTop="@dimen/medium_spacing_16"
         android:background="@drawable/custom_bg_edt_field"
-        android:textSize="@dimen/medium_size_16"
+        android:textSize="@dimen/normal_size_16"
         android:hint="@string/login_user"
         android:elevation="3dp"
         app:layout_constraintBottom_toTopOf="@id/divider"
@@ -50,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_bg_edt_field"
-        android:textSize="@dimen/medium_size_16"
+        android:textSize="@dimen/normal_size_16"
         android:hint="@string/login_password"
         android:elevation="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,4 +85,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
