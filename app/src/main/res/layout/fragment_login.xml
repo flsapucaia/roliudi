@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
@@ -12,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/medium_spacing_16"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/logo_roliudi"
         app:layout_constraintBottom_toTopOf="@+id/login_user"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,12 +22,14 @@
         android:id="@+id/login_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/giant_spacing_48"
         android:layout_marginTop="@dimen/medium_spacing_16"
+        android:layout_marginBottom="@dimen/giant_spacing_48"
         android:background="@drawable/custom_bg_edt_field"
-        android:textSize="@dimen/normal_size_16"
-        android:hint="@string/login_user"
         android:elevation="3dp"
+        android:hint="@string/login_user"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/normal_size_16"
         app:layout_constraintBottom_toTopOf="@id/divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +43,6 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.535" />
@@ -51,14 +52,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_bg_edt_field"
-        android:textSize="@dimen/normal_size_16"
-        android:hint="@string/login_password"
         android:elevation="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/login_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="@dimen/normal_size_16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <CheckedTextView
         android:id="@+id/forgot_password_button"
@@ -78,12 +79,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/giant_spacing_48"
         android:backgroundTint="@color/purple_200"
-        android:paddingEnd="@dimen/big_spacing_32"
         android:paddingStart="@dimen/big_spacing_32"
+        android:paddingEnd="@dimen/big_spacing_32"
         android:text="@string/enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider"/>
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
