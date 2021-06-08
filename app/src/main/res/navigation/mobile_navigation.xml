@@ -21,6 +21,21 @@
         android:id="@+id/nav_login"
         android:name="com.example.roliudi.ui.login.LoginFragment"
         android:label="@string/menu_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_nav_login_to_nav_register"
+            app:destination="@id/nav_register">
+        </action>
+        <action
+            android:id="@+id/action_nav_login_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.example.roliudi.ui.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register">
+    </fragment>
 
 </navigation>

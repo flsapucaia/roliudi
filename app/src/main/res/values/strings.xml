@@ -9,16 +9,32 @@
     <string name="more">Mais</string>
     <string name="menu_about">Sobre</string>
     <string name="menu_login">Entrar</string>
-    <string name="hello_user">Olá %s. Seja bem vindo!</string>
+    <string name="menu_register">Cadastrar</string>
+    <string name="hello_user" formatted="false">Olá %s. Seja bem vindo!</string>
 
     <string name="login_user">Login</string>
     <string name="login_password">Senha</string>
     <string name="login_confirm_password">Confirme sua senha!</string>
     <string name="forgot_password">Esqueci minha senha</string>
-    <string name="register">Ainda não tem conta? Clique!</string>
-    <string name="register_user">Seja bem vindo! Cadastro.</string>
+    <string name="link_register">Ainda não tem conta? Clique!</string>
+
+    <string name="register_user">Seja bem vindo!</string>
     <string name="name">Nome</string>
     <string name="surname">Sobrenome</string>
     <string name="email_user">Email</string>
     <string name="register_button">Cadastre-se!</string>
+    <string name="exitRegister">Saindo, todas as Informações serão perdidas! Sair?</string>
+
+    <string name="dialogMessage">Tem certeza que deseja continuar?</string>
+    <string name="dialogPositiveBtn">Confirmar</string>
+    <string name="dialogNegativeBtn">Cancelar</string>
+    <string name="confirmationMessage">Realizado com Sucesso!</string>
+    <string name="negativeMessage">Cancelado!</string>
+
+    //Tabela de erro
+    <string name="error00">Erro inesperado.</string>
+    <string name="error01">É necessário colocar Email válido!</string>
+    <string name="error02">É necessário colocar uma Senha de acesso.</string>
+    <string name="error03">Senha e confirmação de senha não confere!</string>
+    <string name="error04">Não foi possível fazer login.</string>
 </resources>

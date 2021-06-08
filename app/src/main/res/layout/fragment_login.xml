@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/login"
-    android:padding="@dimen/giant_spacing_48">
+    android:padding="@dimen/giant_spacing_48"
+    tools:context=".ui.login.LoginFragment">
 
     <ImageView
         android:id="@+id/logo"
@@ -44,11 +46,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/login_password_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_bg_edt_field"
@@ -61,9 +62,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider" />
 
-
     <CheckedTextView
-        android:id="@+id/forgot_password_button"
+        android:id="@+id/forgot_password_ck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -72,20 +72,21 @@
         android:textColorLink="@color/primary_color"
         android:textSize="@dimen/small_size_12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_password" />
+        app:layout_constraintTop_toBottomOf="@id/login_password_user" />
 
     <CheckedTextView
-        android:id="@+id/register_button"
+        android:id="@+id/register_ck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:text="@string/register"
+        android:text="@string/link_register"
         android:textColor="@color/primary_color"
-        android:textColorLink="@color/primary_color"
         android:textSize="@dimen/small_size_12"
+        app:layout_constraintBottom_toTopOf="@id/login_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/login_button" />
+        app:layout_constraintTop_toBottomOf="@id/forgot_password_ck"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/login_button"
@@ -106,10 +107,10 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
