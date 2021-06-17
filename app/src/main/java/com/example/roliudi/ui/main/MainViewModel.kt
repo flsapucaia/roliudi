@@ -1,4 +1,6 @@
 package com.example.roliudi.ui.main
 
-class MainViewModel {
+import androidx.lifecycle.ViewModel
+
+class MainViewModel: ViewModel() {
 }

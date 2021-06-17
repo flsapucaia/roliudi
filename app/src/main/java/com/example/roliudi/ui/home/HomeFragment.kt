@@ -12,20 +12,20 @@ import com.example.roliudi.R
 import com.example.roliudi.domain.model.Movie
 import com.example.roliudi.ui.movieadapter.MovieAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
+import org.koin.android.ext.android.inject
+import org.koin.core.parameter.parametersOf
 
 class HomeFragment: Fragment(), Home.View, MovieAdapter.Listener {
     private val movieList = mutableListOf<Movie>()
     private var adapter: MovieAdapter? = null
     val navController by lazy { findNavController() }
-    private lateinit var presenter: Home.Presenter
-
+    private val presenter: Home.Presenter by inject { parametersOf(this@HomeFragment as Home.View) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        presenter = HomePresenter(this)
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 

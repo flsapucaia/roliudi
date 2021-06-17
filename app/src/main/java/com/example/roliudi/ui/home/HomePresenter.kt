@@ -1,10 +1,13 @@
 package com.example.roliudi.ui.home
 
-import com.example.roliudi.AppCore
+import com.example.roliudi.domain.repository.IMoviesRepository
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class HomePresenter(private val view: Home.View): Home.Presenter, CoroutineScope {
+class HomePresenter(
+    private val view: Home.View,
+    private val movieRepository: IMoviesRepository
+    ): Home.Presenter, CoroutineScope {
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.Main
     private var job: Job? = null
@@ -12,7 +15,7 @@ class HomePresenter(private val view: Home.View): Home.Presenter, CoroutineScope
     override fun getMovieList() {
         job = launch {
             val result = withContext(Dispatchers.IO) {
-                AppCore.movieRepository.getMovieList()
+                movieRepository.getMovieList()
             }
             if (result.isNullOrEmpty()) {
                 view.displayFailure(1)

@@ -7,10 +7,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.IOException
 
-class MovieClient {
-    private lateinit var movieApi: MovieApi
+class MovieClient(private val movieApi: MovieApi) {
 
-    fun callFetchMovies(): MovieResponse?{
+    fun callFetchMovies(): MovieResponse? {
         val call = movieApi.fetchMovies()
         try {
             val response = call.execute()
@@ -29,16 +28,12 @@ class MovieClient {
     }
 
     companion object {
-        lateinit var instance: MovieClient
-            private set
 
-        fun initialize() {
-            instance = MovieClient()
-            instance.movieApi = Retrofit.Builder()
+        fun buildMovieApi(): MovieApi =
+            Retrofit.Builder()
                 .baseUrl(Constants.baseUrlMovie)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(MovieApi::class.java)
-        }
     }
 }

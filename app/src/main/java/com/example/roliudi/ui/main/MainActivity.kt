@@ -9,8 +9,11 @@ import androidx.navigation.ui.*
 import com.example.roliudi.R
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
+
+    private val mainViewModel: MainViewModel by viewModel()
 
     private val navController by lazy {
         findNavController(R.id.nav_host_fragment)
