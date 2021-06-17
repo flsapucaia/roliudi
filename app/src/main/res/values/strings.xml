@@ -11,4 +11,5 @@
     <string name="hello_user">Olá %s. Seja bem vindo!</string>
     <string name="movie_release_year">Ano de lançamento</string>
     <string name="movie_title">Título do Filme</string>
+    <string name="movie_genre">Gênero</string>
 </resources>
