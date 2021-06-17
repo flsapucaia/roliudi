@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface MovieApi {
 
-    @GET("/movie/popular")
+    @GET("movie/popular")
     fun fetchMovies(
         @Query("language") language: String = Constants.languageMovie,
         @Query("page") page: Int = 1,

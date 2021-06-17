@@ -23,7 +23,6 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             tools:src="@tools:sample/backgrounds/scenic"
-            android:src="@drawable/dd"
             app:layout_constraintBottom_toTopOf="@id/movie_title_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
