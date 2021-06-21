@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856327571693",
+    "project_id": "roliudi-83c8d",
+    "storage_bucket": "roliudi-83c8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856327571693:android:c27713e2174cd9ce9a24e4",
+        "android_client_info": {
+          "package_name": "com.example.roliudi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856327571693-91o8dsbalievovdmdef0u7istqtr8lrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM8ka8E2xv1-M9zx28RxaMTl-IM_sKIyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856327571693-91o8dsbalievovdmdef0u7istqtr8lrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

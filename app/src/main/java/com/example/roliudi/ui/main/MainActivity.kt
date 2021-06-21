@@ -7,12 +7,11 @@ import android.widget.Toast
 import com.example.roliudi.R
 import androidx.navigation.ui.*
 import android.content.DialogInterface
-import android.util.AttributeSet
-import android.view.View
-import android.view.View.INVISIBLE
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.navigation.ui.NavigationUI
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -21,13 +20,22 @@ import com.example.roliudi.ui.login.LoginFragmentDirections
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
+
+import androidx.navigation.fragment.findNavController
+import com.example.roliudi.ui.login.LoginFragmentDirections
+import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_register.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.nav_header_main.*
 import kotlinx.android.synthetic.main.nav_header_main.view.*
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 

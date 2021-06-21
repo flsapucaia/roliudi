@@ -36,6 +36,9 @@
         android:name="com.example.roliudi.ui.register.RegisterFragment"
         android:label="@string/menu_register"
         tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_nav_register_to_nav_login"
+            app:destination="@id/nav_login" />
     </fragment>
 
 </navigation>
