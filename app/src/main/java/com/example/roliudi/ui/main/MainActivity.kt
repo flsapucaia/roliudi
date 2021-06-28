@@ -37,7 +37,7 @@ import kotlinx.android.synthetic.main.nav_header_main.*
 import kotlinx.android.synthetic.main.nav_header_main.view.*
 import com.google.android.material.navigation.NavigationView
 
-class MainActivity : AppCompatActivity() {
+class  MainActivity : AppCompatActivity() {
 
     private val mainViewModel: MainViewModel by viewModel()
 

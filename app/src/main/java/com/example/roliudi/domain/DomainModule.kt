@@ -1,9 +1,16 @@
 package com.example.roliudi.domain
 
-import com.example.roliudi.domain.repository.IMoviesRepository
-import com.example.roliudi.domain.repository.MoviesRepository
+import com.example.roliudi.domain.repository.userAuth.IUserAuthRepository
+import com.example.roliudi.domain.repository.userAuth.UserAuthRepository
+import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val domainModule = module {
-    single<IMoviesRepository> { MoviesRepository(apiClient = get()) }
+    single {
+        androidContext()
+    }
+
+    single<IUserAuthRepository> {
+        UserAuthRepository(get())
+    }
 }

@@ -32,7 +32,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         }
 
         login_button.setOnClickListener {
-            loginWithEmailAndPassword(login_user.text.trim().toString(),
+            loginWithEmailAndPassword(
+                login_user.text.trim().toString(),
                 login_password_user.text.trim().toString()
             )
         }
@@ -51,7 +52,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 email.isEmpty() -> showMessage(getString(R.string.error01))
                 password.isEmpty() -> showMessage(getString(R.string.error02))
                 else -> {
-                    if (viewModel.signInWithEmailAndPassword(this, email, password)) {
+                    if (viewModel.signInWithEmailAndPassword(email, password)) {
                         showMessage(getString(R.string.confirmationMessage))
                         onStart()
                     } else showMessage(getString(R.string.error04))

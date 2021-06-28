@@ -1,10 +1,10 @@
 package com.example.roliudi.data
 
-import com.example.roliudi.data.service.request.MovieClient
+import com.example.roliudi.data.service.auth.UserAuthentication
 import org.koin.dsl.module
 
 val dataModule = module {
-    single { MovieClient.buildMovieApi() }
-
-    single { MovieClient(movieApi = get()) }
+    single {
+        UserAuthentication()
+    }
 }
