@@ -1,8 +1,9 @@
 package com.example.roliudi.core
 
 import android.app.Application
+import android.util.Log
 import com.example.roliudi.data.dataModule
-import com.example.roliudi.domain.repositoryModule
+import com.example.roliudi.domain.domainModule
 import com.example.roliudi.ui.about.aboutModule
 import com.example.roliudi.ui.home.homeModule
 import com.example.roliudi.ui.login.loginModule
@@ -24,7 +25,7 @@ class App: Application() {
             androidContext(this@App)
 
             modules(
-                repositoryModule,
+                domainModule,
                 dataModule,
                 mainModule,
                 loginModule,

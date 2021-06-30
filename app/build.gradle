@@ -44,10 +44,10 @@ dependencies {
     def recyclerviewVersion = "1.2.1"
     def retrofitVersion = "2.7.0"
     def okHttpVersion = '4.9.0'
-    def gsonconverterVersion = "2.7.0"
+    def gsonConverterVersion = "2.7.0"
     def materialVersion = '1.3.0'
     def navigationVersion = '2.3.5'
-    def koin_version = '2.2.3'
+    def koinVersion = '2.2.3'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
@@ -72,11 +72,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
-    implementation "com.squareup.retrofit2:converter-gson:$gsonconverterVersion"
-
-    //Koin
-    implementation "org.koin:koin-android:$koinVersion"
-    implementation "org.koin:koin-androidx-viewmodel:$koinVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$gsonConverterVersion"
 
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
@@ -87,9 +83,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.1'
 
     // Koin
-    implementation "org.koin:koin-android:$koin_version"
-    implementation "io.insert-koin:koin-androidx-scope:$koin_version"
-    implementation "io.insert-koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-android:$koinVersion"
+    implementation "io.insert-koin:koin-androidx-scope:$koinVersion"
+    implementation "io.insert-koin:koin-androidx-viewmodel:$koinVersion"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

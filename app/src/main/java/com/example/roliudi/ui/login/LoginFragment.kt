@@ -9,16 +9,22 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
 import com.example.roliudi.ui.main.MainActivity
 import kotlinx.android.synthetic.main.fragment_login.login_button
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
-    private lateinit var viewModel: LoginViewModel
+    private val viewModel: LoginViewModel by viewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
         initListener()
+        observeEvents()
+    }
+
+    private fun observeEvents() {
+//        viewModel.observe liveData do callback
+//        (activity as MainActivity).atualizar o drawerLayout
     }
 
     private fun initListener() {
@@ -52,7 +58,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 email.isEmpty() -> showMessage(getString(R.string.error01))
                 password.isEmpty() -> showMessage(getString(R.string.error02))
                 else -> {
-                    if (viewModel.signInWithEmailAndPassword(email, password)) {
+                    if (// TODO substituir viewModel.signInWithEmailAndPassword(email, password) pelo liveData
+                     true) {
                         showMessage(getString(R.string.confirmationMessage))
                         onStart()
                     } else showMessage(getString(R.string.error04))

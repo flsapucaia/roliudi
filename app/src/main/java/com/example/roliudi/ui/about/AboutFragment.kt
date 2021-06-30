@@ -5,14 +5,13 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import com.example.roliudi.R
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class AboutFragment : Fragment(R.layout.fragment_about) {
 
-    private lateinit var viewModel: AboutViewModel
+    private val viewModel: AboutViewModel by viewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        viewModel = ViewModelProvider(this).get(AboutViewModel::class.java)
     }
 }

@@ -1,8 +1,8 @@
-package com.example.roliudi.data.response
+package com.example.roliudi.domain.mapper
 
 import com.example.roliudi.domain.model.Movie
 
-class MovieResponseToMovie() {
+class MovieResponseToDomainMapper() {
 //
 //    fun map(input: MovieResponse): Movie{
 //        return Movie(

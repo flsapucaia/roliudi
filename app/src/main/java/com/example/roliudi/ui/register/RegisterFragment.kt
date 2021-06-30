@@ -5,17 +5,16 @@ import android.view.View
 import com.example.roliudi.R
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import com.example.roliudi.ui.main.MainActivity
 import kotlinx.android.synthetic.main.fragment_register.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
-    private lateinit var viewModel: RegisterViewModel
+    private val viewModel: RegisterViewModel by viewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(RegisterViewModel::class.java)
         initListeners()
     }
 

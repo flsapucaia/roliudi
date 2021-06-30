@@ -4,7 +4,6 @@ import com.example.roliudi.domain.model.Movie
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-
 data class MovieResponse (
     @SerializedName("page")
     @Expose
