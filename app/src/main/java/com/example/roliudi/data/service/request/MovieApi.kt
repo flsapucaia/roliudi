@@ -10,9 +10,9 @@ interface MovieApi {
 
     @GET("movie/popular")
     fun fetchMovies(
+        @Query("api_key") apiKeyMovie: String = Constants.appIdMovie,
         @Query("language") language: String = Constants.languageMovie,
         @Query("page") page: Int = 1,
-        @Query("api_key") apiKeyMovie: String = Constants.appIdMovie
-//        @Query("region") regionMovie: String = "BRA"
+        @Query("region") regionMovie: String = "BR"
     ): Call<MovieResponse>
 }
