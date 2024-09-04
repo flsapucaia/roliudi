@@ -1,4 +1,4 @@
-package com.example.roliudi.ui.home
+package com.example.roliudi.ui.mvp.home
 
 import com.example.roliudi.domain.model.Movie
 

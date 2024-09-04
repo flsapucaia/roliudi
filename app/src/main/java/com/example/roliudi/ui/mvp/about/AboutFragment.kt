@@ -1,4 +1,4 @@
-package com.example.roliudi.ui.about
+package com.example.roliudi.ui.mvp.about
 
 import android.os.Bundle
 import android.view.LayoutInflater
